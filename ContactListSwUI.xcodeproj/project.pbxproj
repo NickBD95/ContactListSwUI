@@ -11,6 +11,9 @@
 		51F3B7612B3C06000078A323 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3B7602B3C06000078A323 /* ContentView.swift */; };
 		51F3B7632B3C06010078A323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F3B7622B3C06010078A323 /* Assets.xcassets */; };
 		51F3B7662B3C06010078A323 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F3B7652B3C06010078A323 /* Preview Assets.xcassets */; };
+		51F3B76D2B3C061D0078A323 /* PersonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3B76C2B3C061D0078A323 /* PersonsListView.swift */; };
+		51F3B76F2B3C06260078A323 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3B76E2B3C06260078A323 /* ContactsView.swift */; };
+		51F3B7762B3C0CFF0078A323 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3B7752B3C0CFF0078A323 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		51F3B7602B3C06000078A323 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51F3B7622B3C06010078A323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51F3B7652B3C06010078A323 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51F3B76C2B3C061D0078A323 /* PersonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListView.swift; sourceTree = "<group>"; };
+		51F3B76E2B3C06260078A323 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		51F3B7752B3C0CFF0078A323 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		51F3B7782B3C1D7D0078A323 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		51F3B77A2B3C1DC20078A323 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				51F3B75E2B3C06000078A323 /* ContactListSwUIApp.swift */,
-				51F3B7602B3C06000078A323 /* ContentView.swift */,
+				51F3B7772B3C1D7D0078A323 /* Model */,
+				51F3B7792B3C1DC20078A323 /* StorageManager */,
+				51F3B7702B3C062C0078A323 /* Views */,
 				51F3B7622B3C06010078A323 /* Assets.xcassets */,
 				51F3B7642B3C06010078A323 /* Preview Content */,
 			);
@@ -65,6 +75,33 @@
 				51F3B7652B3C06010078A323 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51F3B7702B3C062C0078A323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51F3B7602B3C06000078A323 /* ContentView.swift */,
+				51F3B76C2B3C061D0078A323 /* PersonsListView.swift */,
+				51F3B7752B3C0CFF0078A323 /* DetailsView.swift */,
+				51F3B76E2B3C06260078A323 /* ContactsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51F3B7772B3C1D7D0078A323 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51F3B7782B3C1D7D0078A323 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51F3B7792B3C1DC20078A323 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				51F3B77A2B3C1DC20078A323 /* DataStore.swift */,
+			);
+			path = StorageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F3B7762B3C0CFF0078A323 /* DetailsView.swift in Sources */,
 				51F3B7612B3C06000078A323 /* ContentView.swift in Sources */,
 				51F3B75F2B3C06000078A323 /* ContactListSwUIApp.swift in Sources */,
+				51F3B76D2B3C061D0078A323 /* PersonsListView.swift in Sources */,
+				51F3B76F2B3C06260078A323 /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
